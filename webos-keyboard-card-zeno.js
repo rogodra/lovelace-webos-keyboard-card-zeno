@@ -1,4 +1,4 @@
-class WebOSKeyboardCard extends HTMLElement {
+class WebOSKeyboardCardZeno extends HTMLElement {
     setConfig(config) {
 
         this.config = config;
@@ -16,7 +16,6 @@ class WebOSKeyboardCard extends HTMLElement {
             this.card.appendChild(this.content);
             this.appendChild(this.card);
         }
-        this.card.header = this.config.title || "Type to TV";
         let label = this.config.label || "Text to type"
         this.content.innerHTML = `
       <div style="display: flex">
@@ -53,4 +52,4 @@ class WebOSKeyboardCard extends HTMLElement {
     }
 }
 
-customElements.define('webos-keyboard-card', WebOSKeyboardCard);
+customElements.define('webos-keyboard-card-zeno', WebOSKeyboardCardZeno);
